@@ -1,0 +1,49 @@
+/**
+*Responsiveness响应式架构
+*样式
+*@author Kevin Zhong
+*@github  https://github.com/willworks 
+ */
+ /* 大屏幕开始启动了*/
+@media all and (min-width: 1200px) {
+  .nav li{
+   width: 160px; 
+  }  
+} 
+/*手机横屏到竖屏 到常规屏幕 ipad*/ 
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important ;
+  }
+  .visible-tablet {
+    display: inherit !important;
+  }
+  .hidden-tablet {
+    display: none !important;
+  } 
+}
+
+
+/*手机横屏和平板竖屏幕*/
+@media (min-width: 400px)and (max-width: 768px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+}  
+
+/* 针对iPhone5 横屏和竖屏样式 */ 
+@media (min-device-width : 320px) and (max-device-width : 568px) {
+  //              
+} 
