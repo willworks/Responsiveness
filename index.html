@@ -1,11 +1,11 @@
 <!-- 
-*Responsiveness响应式架构
-*html页面头部以及规范
-*@author Kevin Zhong
-*@github  https://github.com/willworks 
-*@关于规范:
- - 标签闭合，包括meta、br、hr
- - 代码注释
+    Document   : Responsiveness响应式架构
+    Created on : 2015.8.6 15:41:00
+    Author     : Kevin Zhong
+    License    : MIT
+    github     : https://github.com/willworks 
+    Description: Responsiveness页面响应式架构 以及相关编码，兼容性注释
+    Copyright (c) 2015 Kevin Zhong
 -->
 <!DOCTYPE html>
 <html>
@@ -64,10 +64,30 @@
     <meta name="format-detection" content="telephone=no,email=no" />
 
     <!--==============================引入外部CSS以及需要预先加载的js===================================-->
+    <!-- 初始样式 -->
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- 通用样式 -->
     <link rel="stylesheet" href="css/style.css" /> 
-    <link rel="stylesheet" media="screen and (max-device-width: 979px)" href="assets/css/pad.css" />   
-    <link rel="stylesheet" media="screen and (max-device-width: 400px)" href="assets/css/phone.css" />  
+    <!-- 大屏独立样式 -->
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
+    href="/assets/css/pad.css" 
+    />
+    <!-- pad独立样式 -->
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
+    href="/assets/css/pad.css" 
+    />
+    <!-- phone独立样式 -->
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
+    href="/assets/css/phone.css" 
 </head>
 <body>
 </body>
