@@ -1,6 +1,6 @@
 <!-- 
     Document   : Responsiveness响应式架构
-    Created on : 2015.8.6 15:41:00
+    Created on : 2015.8
     Author     : Kevin Zhong
     License    : MIT
     github     : https://github.com/willworks 
@@ -9,6 +9,7 @@
 -->
 <!DOCTYPE html>
 <html>
+<!-- head -->
 <head>
     <title>Responsiveness响应式架构</title>
     <!--==================================html meta标签大集合========================================-->
@@ -65,32 +66,25 @@
 
     <!--==============================引入外部CSS以及需要预先加载的js===================================-->
     <!-- 初始样式 -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- 通用样式 -->
-    <link rel="stylesheet" href="css/style.css" /> 
-    <!-- 大屏独立样式 -->
-    <link 
-    rel="stylesheet" 
-    type="text/css" 
-    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
-    href="/assets/css/pad.css" 
-    />
-    <!-- pad独立样式 -->
-    <link 
-    rel="stylesheet" 
-    type="text/css" 
-    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
-    href="/assets/css/pad.css" 
-    />
-    <!-- phone独立样式 -->
-    <link 
-    rel="stylesheet" 
-    type="text/css" 
-    media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
-    href="/assets/css/phone.css" 
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+    <!-- 媒体查询文件通用样式 -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/media.css" />
+    <!-- 样式 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
 </head>
+<!-- END head -->
+
+<!-- body -->
 <body>
+
+
+    <!--=================引入外部js，由于加载js时阻塞页面渲染，故置于body底部===========================-->
+    <!-- 公用js库 -->
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <!-- 页面独有js库js库 -->
+    <script type="text/javascript" src="/js/main.js" charset="utf-8"></script>
 </body>
+<!-- END body -->
 </html>
 
 
